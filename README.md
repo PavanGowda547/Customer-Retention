@@ -1,85 +1,50 @@
-# **Customer Retention Analysis**
+# Customer Retention Analysis
 
-## **Overview**  
-The Customer Retention Analysis project focuses on identifying key factors influencing customer retention and churn. By leveraging data-driven insights, the analysis helps businesses enhance customer satisfaction, improve service offerings, and implement proactive retention strategies. The dataset includes customer demographics, service usage, billing details, and support interactions, providing a comprehensive understanding of customer behavior.
+## Overview
 
-## **Dataset Overview**  
-The dataset consists of the following key attributes:
+This project focuses on analyzing customer retention trends to understand key factors influencing churn. By evaluating demographics, tenure, service usage, billing patterns, and customer support interactions, businesses can develop strategies to enhance retention and improve customer lifetime value (CLV).
 
-- **Customer Demographics:** Gender, Senior Citizen status, Dependents.  
-- **Tenure & Subscription:** Tenure duration, contract type, and subscription details.  
-- **Service Usage Metrics:** Usage of phone, internet, multiple lines, security services, and entertainment services.  
-- **Billing & Payment Metrics:** Monthly charges, total charges, and payment methods.  
-- **Customer Support Tickets:** Number and type of support interactions.  
+## Dataset Overview
 
-## **Project Goals**  
-The primary objective of this analysis is to provide actionable insights into customer retention by identifying trends in churn behavior and factors affecting customer loyalty. These insights help businesses develop targeted strategies to enhance customer experience and increase retention rates.
+The dataset contains the following columns:
 
-## **Analysis Summary**  
-The analysis examines key factors influencing customer retention, including demographics, tenure, service usage, billing, and support interactions. Senior citizens and customers without dependents show lower retention rates, while long-term contracts have higher retention compared to month-to-month plans. Short-tenure customers (0–20 months) are more likely to leave, indicating early dissatisfaction. Core services such as phone and internet, especially Fiber Optic, impact retention, while security and tech support services contribute to customer loyalty. Higher monthly charges and electronic check payments correlate with lower retention, while frequent customer support interactions, especially unresolved technical issues, lead to dissatisfaction. Understanding these trends enables businesses to develop retention strategies such as contract incentives, better support services, and proactive engagement.
+- **Customer ID**: Unique identifier for each customer.
+- **Gender**: Male or Female.
+- **Senior Citizen**: Indicates if the customer is a senior citizen.
+- **Dependents**: Shows if the customer has dependents.
+- **Tenure**: The duration (in months) a customer has been with the company.
+- **Contract Type**: Month-to-month, one-year, or two-year contracts.
+- **Services Used**: Includes phone, internet, security, tech support, and streaming services.
+- **Billing & Payment Details**: Monthly charges, total charges, and payment methods.
+- **Customer Support Interactions**: Number of administrative and technical support tickets.
+- **Churn Status**: Indicates whether the customer has churned or remained.
 
-## **Key Insights & Recommendations**  
+## Project Goals
 
-### **1. Customer Demographics**  
-- **Gender-wise Retention:** Male (50.25%), Female (49.76%).  
-- **Senior Citizen Retention:** Lower retention among older customers (666 retained, 476 churned).  
-- **Dependents Impact:** Customers with dependents exhibit higher retention (1,784 retained, 326 churned).  
+The primary goal is to provide actionable insights into customer retention and churn patterns to improve business strategies, reduce customer loss, and maximize long-term revenue.
 
-### **2. Tenure & Subscription Analysis**  
-- **Average Tenure:** 32.37 months.  
-- **Retention by Tenure Group:**  
-  - 0–20 months: 1,251 churned, requiring early engagement strategies.  
-  - 20–40 months: 333 churned, indicating mid-term risks.  
-  - 40–60 months: 223 churned, showing long-term stability.  
-  - 60+ months: 99 churned, demonstrating strong retention.  
-- **Contract Type Retention:**  
-  - Month-to-month contracts show lower retention (42.7% churn).  
-  - One-year contracts have moderate retention (11.3% churn).  
-  - Two-year contracts have the highest retention (2.8% churn).  
+## Analysis Steps
 
-### **3. Service Usage & Retention**  
-- **Phone Services:** Higher retention among phone service users.  
-- **Internet Services:**  
-  - DSL users show better retention compared to Fiber Optic.  
-  - No internet service customers have the highest retention.  
-- **Security & Tech Support:** Customers using security and tech support services have higher retention rates.  
-- **Streaming Services:** Customers engaging with streaming services tend to retain longer.  
+The analysis includes cleaning and transforming the dataset, identifying retention trends based on tenure, demographics, and service usage, and visualizing key metrics in an interactive dashboard. Retention rates are examined across contract types, billing methods, and support interactions to identify potential churn risks.
 
-### **4. Billing & Payment Metrics**  
-- **Monthly Charges & Retention:**  
-  - Higher charges may reduce retention, requiring flexible pricing options.  
-- **Total Charges & Retention:**  
-  - Long-term customers contribute significantly to revenue, emphasizing retention importance.  
-- **Retention by Payment Method:**  
-  - Auto-pay methods (bank transfer, credit card) correlate with higher retention.  
-  - Electronic check users show lower retention rates.  
+## Key Insights & Recommendations
 
-### **5. Customer Support & Retention**  
-- **Support Interaction & Retention:**  
-  - Higher retention among customers with resolved support interactions.  
-  - Technical issues without resolution lead to lower retention.  
+- **Customer Demographics**: Males (50.25%) and females (49.76%) have similar retention rates. Senior citizens exhibit lower retention (666 retained, 476 churned), and customers with dependents show higher retention (1,784 retained, 326 churned).
+- **Tenure & Subscription Analysis**: Churn is highest in the first 20 months (1,251 churned). Retention improves beyond 40 months, with two-year contracts having the highest retention (97.2%) and month-to-month contracts showing the highest churn (42.7%).
+- **Service Usage & Retention**: Phone and DSL internet users retain better than Fiber Optic users. Customers using security, tech support, and streaming services show higher retention.
+- **Billing & Payment Metrics**: Higher monthly charges correlate with lower retention, necessitating flexible pricing strategies. Auto-pay methods (bank transfer, credit card) support better retention, while electronic check users exhibit higher churn.
+- **Customer Support & Retention**: Effective support interactions improve retention, whereas unresolved technical issues lead to higher churn.
+- **Overall Retention Analysis**: The overall retention rate is **73.5%** (5,174 retained from 7,043 customers), and the **Customer Lifetime Value (CLV)** per retained customer is **$1,338.4**, highlighting the importance of proactive engagement strategies.
 
-### **6. Overall Retention Analysis**  
-- **Overall Retention Rate:** 73.5% (5,174 retained from 7,043 customers).  
-- **Customer Lifetime Value (CLV):** $1,338.4 per retained customer.  
+## Future Enhancements
 
-## **Recommendations**  
+- **Predictive Analytics**: Implement machine learning models to forecast customer churn based on historical patterns.
+- **Customer Segmentation**: Develop targeted retention strategies based on customer behavior and demographics.
+- **Sentiment Analysis**: Analyze customer feedback to identify underlying dissatisfaction drivers.
+- **Service Optimization**: Improve resources for high-churn services and enhance self-service options.
 
-### **1. Strengthen Retention Strategies**  
-- Offer incentives for long-term contracts to enhance retention.  
-- Personalize engagement for customers at risk of leaving.  
+## Conclusion
 
-### **2. Improve Service & Support**  
-- Expand security and tech support services to improve customer experience.  
-- Enhance first-call resolution to boost satisfaction.  
+This customer retention analysis provides valuable insights to optimize business strategies and minimize churn. By focusing on key risk factors and implementing data-driven solutions, businesses can enhance customer satisfaction, drive long-term loyalty, and maximize revenue.
 
-### **3. Optimize Billing & Payment Models**  
-- Provide affordable plans and incentives for long-term retention.  
-- Encourage auto-payments for better retention rates.  
-
-### **4. Leverage Predictive Analytics & Sentiment Analysis**  
-- Identify customers at risk of leaving and implement early interventions.  
-- Analyze sentiment in support interactions to detect dissatisfaction early.  
-
-## **Conclusion**  
-This analysis provides actionable insights to help businesses increase customer retention by focusing on engagement, support quality, and strategic pricing. By implementing proactive measures, companies can enhance customer loyalty, reduce churn, and maximize long-term revenue.  
+---
