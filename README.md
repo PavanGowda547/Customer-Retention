@@ -1,5 +1,7 @@
 # 📌 Customer Retention Analysis  
+![Image](https://github.com/user-attachments/assets/d063b4ad-68fd-4608-860e-357ecf209fcd)
 
+![Image](https://github.com/user-attachments/assets/52182e6e-8766-4e53-9cad-e82994c37e11)
 ## 📊 Overview  
 This project focuses on analyzing customer retention trends to understand key factors influencing churn. By evaluating **demographics, tenure, service usage, billing patterns, and customer support interactions**, businesses can develop strategies to enhance retention and improve **customer lifetime value (CLV)**.
 
