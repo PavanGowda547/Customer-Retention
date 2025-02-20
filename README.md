@@ -5,20 +5,36 @@
 ## 📊 Overview  
 This project focuses on analyzing customer retention trends to understand key factors influencing churn. By evaluating **demographics, tenure, service usage, billing patterns, and customer support interactions**, businesses can develop strategies to enhance retention and improve **customer lifetime value (CLV)**.
 
-## 📂 Dataset Overview  
+---
+
+## 📂 Dataset Overview
 The dataset contains the following columns:
 
-- **Customer ID**: Unique identifier for each customer.
-- **Gender**: Male or Female.
-- **Senior Citizen**: Indicates if the customer is a senior citizen.
-- **Partner**: Shows if the customer has a partner.
-- **Dependents**: Indicates if the customer has dependents.
-- **Tenure**: Duration (in months) the customer has been with the company.
-- **Contract Type**: Month-to-month, one-year, or two-year contracts.
-- **Services Used**: Includes phone, internet, security, tech support, and streaming services.
-- **Billing & Payment Details**: Monthly charges, total charges, and payment methods.
-- **Customer Support Interactions**: Number of administrative and technical support tickets.
-- **Churn Status**: Indicates whether the customer has churned or remained.
+- **customerID**: Unique identifier for each customer.
+- **gender**: Male or Female.
+- **SeniorCitizen**: Indicates if the customer is a senior citizen.
+- **Partner**: Indicates if the customer has a partner.
+- **Dependents**: Shows if the customer has dependents.
+- **tenure**: The duration (in months) a customer has been with the company.
+- **PhoneService**: Indicates if the customer has a phone service.
+- **MultipleLines**: Specifies whether the customer has multiple phone lines.
+- **InternetService**: Type of internet service (DSL, Fiber optic, or None).
+- **OnlineSecurity**: Whether the customer has online security service.
+- **OnlineBackup**: Whether the customer has online backup service.
+- **DeviceProtection**: Indicates if the customer has device protection.
+- **TechSupport**: Shows if the customer has access to tech support.
+- **StreamingTV**: Indicates if the customer subscribes to streaming TV services.
+- **StreamingMovies**: Indicates if the customer subscribes to streaming movie services.
+- **Contract**: Type of contract (Month-to-month, One-year, or Two-year).
+- **PaperlessBilling**: Whether the customer has opted for paperless billing.
+- **PaymentMethod**: The method used for payments (Electronic check, Mailed check, Bank transfer, or Credit card).
+- **MonthlyCharges**: The amount charged to the customer per month.
+- **TotalCharges**: Total amount charged to the customer.
+- **numAdminTickets**: Number of administrative support tickets raised.
+- **numTechTickets**: Number of technical support tickets raised.
+- **Churn**: Indicates whether the customer has churned or remained.
+
+---
 
 ## 🎯 Project Goals  
 The primary goal is to provide **actionable insights** into customer retention and churn patterns to **improve business strategies, reduce customer loss, and maximize long-term revenue**.
